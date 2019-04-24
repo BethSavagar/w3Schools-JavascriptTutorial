@@ -11,6 +11,10 @@ ol {
   margin: auto;
 }
 
+.menu {
+  text-align: left;
+}
+
 #ids {
   background-color: #ccffcc;
 }
