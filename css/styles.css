@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+}
+
+#ids {
+  background-color: #ccffcc;
+}
+
+
+#attributes {
+  background-color: #ccffff;
+}
+
+#styles {
+  background-color: #ffffcc;
+}
+
+#show_hide {
+  background-color: #ffcccc;
+}
+
+#uncover {
+  background-color: #ffccff;
+}
+
+#useScript {
+  background-color: #ccccff;
+}
+
+#scriptBody {
+  background-color: #ffff99;
+}

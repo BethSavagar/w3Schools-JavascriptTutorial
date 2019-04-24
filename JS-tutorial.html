@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script>
+  function changePara () {
+    document.getElementById("para").innerHTML = "This paragraph's text is changed.";
+  }
+  </script>
+</head>
+<body>
+
+<h1>What Can JavaScript Do?</h1>
+
+<div id="ids">
+  <h2 id="change">JavaScript can change HTML content.</h2>
+  <button type="button" onclick='document.getElementById("change").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+</div>
+
+<div id="attributes">
+  <h2>JavaScript can also change HTML attribute values.</h2>
+  <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+  <button onclick="document.getElementById('myImage').src='images/smiley.png'">Smile</button>
+  <img id="myImage" src="images/smiley.png" style="width:100px">
+  <button onclick="document.getElementById('myImage').src='images/sad2.jpg'">Frown</button>
+</div>
+
+<div id="styles">
+  <h2 id="styles">JavaScript can change the style of an HTML element.</h2>
+  <button type="button" onclick="document.getElementById('styles').style.color='blue'">Click Me!</button>
+</div>
+
+<div id="show_hide">
+  <h2>JavaScript can hide HTML elements.</h2>
+  <p id="hide"> Such as this text</p>
+  <button type="button" onclick="document.getElementById('hide').style.display='none'">Hide</button>
+  <button type="button" onclick="document.getElementById('hide').style.display='block'">Show!</button>
+</div>
+
+<div id="uncover">
+  <h2>JavaScript can show hidden HTML elements.</h2>
+  <p id="display" style="display:none">Hello JavaScript!</p>
+  <button type="button" onclick="document.getElementById('display').style.display='block'">Click Me!</button>
+</div>
+
+<div id="useScript">
+  <h2>Javascript should be written in script tags, either in the head or body section of html<h2>
+    <p id="para">This is the original paragraph</p>
+    <button type="button" onclick="changePara()">Change Paragraph</button>
+</div>
+
+<div id="scriptBody">
+  <h2>This is an example of using script tags in the body of html</h2>
+  <p>Changing an image</p>
+  <button type="button" onclick="revertImage()">Sun</button>
+  <image id=sunMoon src="images/sun.png" style="width:100px">
+  <button type="button" onclick="changeImage()">Moon</button>
+  <script>
+  function changeImage (){
+    document.getElementById("sunMoon").src='images/moon.jpg';
+  }
+  function revertImage (){
+    document.getElementById("sunMoon").src='images/sun.png';
+  }
+  </script>
+</div>
+
+<!-- document.write is used for testing purposes, it overwrites all existing html, i don't know why it is useful?!
+<div style='background-color:#ffcc99'>
+  <h1>My First Web Page</h1>
+  <p>My first paragraph.</p>
+
+  <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+</div> -->
+</body>
+</html>
