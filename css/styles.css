@@ -6,6 +6,11 @@ h1 {
   color: blue;
 }
 
+ol {
+  width: 30%;
+  margin: auto;
+}
+
 #ids {
   background-color: #ccffcc;
 }
@@ -33,4 +38,8 @@ h1 {
 
 #scriptBody {
   background-color: #ffff99;
+}
+
+#debugging {
+  background-color: #ccff99;
 }
